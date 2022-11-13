@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  var appTitle = Text('麻煩'),
+  var appTitle = Text('我的第一個Flutter App'),
       hiFlutter = Text(
-        'hi，Flutter',
-        style:TextStyle(fontSize: 50),
+        'Hi，Flutter. \n 今天是20220926',
+        style:TextStyle(fontSize: 50,
+            decoration: TextDecoration.underline,
+            color: Colors.red),
       );
+
+
 
   var appBody = Center(
     child: hiFlutter,
@@ -13,7 +17,7 @@ void main() {
 
   var appBar = AppBar(
     title: appTitle,
-    backgroundColor: Color(0xff000ff),
+    backgroundColor: Color(0xff0000ff),
   );
 
   var app = MaterialApp(
