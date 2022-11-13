@@ -4,21 +4,23 @@ void main() {
   var appTitle = Text('我的第一個Flutter App'),
       hiFlutter = Text(
         'Hi，Flutter. \n 今天是20220926',
-        style:TextStyle(fontSize: 50,
+        style:TextStyle(fontSize: 25,
             decoration: TextDecoration.underline,
             color: Colors.red),
       );
 
 
 
-  var appBody = Center(
-    child: Container(
-      margin: const EdgeInsets.all(10.0),
-      color: Colors.amber[600],
-      width: 48.0,
-      height: 48.0,
-    ),
+  var appBody = Container(
+    child: hiFlutter,
+      alignment: Alignment.topRight,
+      margin: EdgeInsets.all(50),
+      color: Colors.white,
+      padding: EdgeInsets.fromLTRB(30, 30, 30, 30)
+
+
     );
+
 
   var appBar = AppBar(
     title: appTitle,
