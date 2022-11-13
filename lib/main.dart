@@ -12,8 +12,13 @@ void main() {
 
 
   var appBody = Center(
-    child: hiFlutter,
-  );
+    child: Container(
+      margin: const EdgeInsets.all(10.0),
+      color: Colors.amber[600],
+      width: 48.0,
+      height: 48.0,
+    ),
+    );
 
   var appBar = AppBar(
     title: appTitle,
